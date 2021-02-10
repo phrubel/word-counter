@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Word Counter</title>
+    <!--description-->
+    <meta name="description"
+        content="Smart Word Counter is a very simple word counter web app using Pure JavaScript.    
+        Smart Word Counter is help you to count any paragraph has how many word.It works easily, & improve your total word counter. It will make your life super easy! Made With ♥ by phrubel">
+    <!-------Fav icon-->
+    <link rel="shortcut icon" href="icon/icon1.png" type="image/x-icon">
+    <!-------Main Css style-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-------Bootstrap Css Style-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid" style="height: 100vh;">
+        <div class="row" style="height: 100vh;">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 my-auto">
+                <div class="counter-field p-3">
+                    <h2 class="text-center"> Word Counter</h2>
+                    <br>
+                    <textarea onkeyup="countWords()" onpaste="countWords()" id="textArea" class="form-control" rows="6"
+                        placeholder="Type/Paste Your Paragraph Here..."></textarea>
+                    <div class="row mt-3">
+                        <div class="col">
+                           <p> Word Count: <span id="wordCount">0</span></p>
+                        </div>
+                        <div class="col text-center">
+                            <button id="clearBtn" class="btn btn-style">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <!---Foter Design-->
+    <footer>
+        <div class="text-center p-3">
+            <small>&copy 2021.Parvez Hasan Rubel | All Right Reserved.</small> <br>
+            <small>Developed With Pure ♥ Love By <a href="https://web.facebook.com/parvezhasanrubel42/"> Parvez Hasan Rubel.</a></small>
+        </div>
+    </footer>
+    <!--Custom Javascript-->
+    <script src="app.js"></script>
+</body>
+
+</html>
