@@ -8,20 +8,15 @@ const countWords = () => {
   let textInput = textArea.value;
   textInput = textInput.trim();
   const words = textInput.split(" ");
-  if ((words[0] === "")) {
+  if (words[0] === "") {
     wordCount.innerText = 0;
-  } 
-  else {
+  } else {
     wordCount.innerText = words.length;
   }
 };
 
 // Clear Button Handler
-clearBtn.addEventListener('click',()=>{
-  textArea.value="";
+clearBtn.addEventListener("click", () => {
+  textArea.value = "";
   countWords();
-})
-
-
-
-
+});
